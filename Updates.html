@@ -13,9 +13,9 @@
     </div>
     <center><h1>Update log:</h1></center>
     <center><div id="commits"></div></center>
-    <script type = "text/javascript" src="Sidebar.js"></script>
-    <script type = "text/javascript" src="Clarity.js"></script>
-    <script type = "text/javascript" src="UpdateAPI.js"></script>
+    <script type="text/javascript" src="Sidebar.js"></script>
+    <script type="text/javascript" src="Clarity.js"></script>
+    <script type="text/javascript" src="UpdateAPI.js"></script>
 
     <script>
         // Fetch all branches from GitHub API
@@ -27,7 +27,7 @@
 
                 // Fetch commits for each branch
                 const fetchCommitsPromises = branches.map(branch => {
-                    return fetch(`https://api.github.com/repos/HttpAnimation/FYC-Rewrite-V2/commits?sha=${branch.name}`)
+                    return fetch(`https://api.github.com/repos/HttpAnimation/Repler/commits?sha=${branch.name}`)
                         .then(res => res.json())
                         .then(commits => {
                             // Add commits with branch information to the array
