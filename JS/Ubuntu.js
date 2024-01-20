@@ -38,17 +38,9 @@ fetch('../Repos/Ubuntu.json')
                         movieElement.innerHTML = `
                             <h1>${movie['Name']}</h1>
                             <img src="${movie['Icon']}" alt="Movie Icon">
-                            <a href="${movie['.Torrent']}" target="_blank" class="movie-button">Download Torrent</a>
-                            <a href="${movie['MagnetUrl']}" class="movie-button">Magnet Link</a>
-                            <button class="source-button" onclick="handleSourceButtonClick('${movie['Source']}')">Source</button>
+                            <a href="${movie['.Torrent']}" target="_blank" class="movie-button">Download ISO</a>
+                            <a href="${movie['MagnetUrl']}" class="movie-button">Offical Website</a>
                         `;
-                        if (movie['HasStreamURL'] === true) {
-                            const streamButton = document.createElement('a');
-                            streamButton.href = movie['StreamURL'];
-                            streamButton.classList.add('movie-button');
-                            streamButton.textContent = 'Open Stream';
-                            movieElement.appendChild(streamButton);
-                        }
                         contentElement.appendChild(movieElement);
                     });
                 } else {
