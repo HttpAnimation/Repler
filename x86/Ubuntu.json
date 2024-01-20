@@ -1,13 +1,13 @@
 [
     {
-        "Repo-Name": "DistroName",
+        "Repo-Name": "Ubuntu Repo",
         "Movies": {
-            "DistroNameAndVersion": {
-                "Name": "DistroNameAndVersion",
-                ".Torrent": "DownloadISO",
-                "MagnetUrl": "OfficalWebsite",
+            "Ubuntu 22.04.3 LTS": {
+                "Name": "Ubuntu 22.04.3 LTS",
+                ".Torrent": "https://releases.ubuntu.com/22.04.3/ubuntu-22.04.3-desktop-amd64.iso",
+                "MagnetUrl": "https://ubuntu.com/",
                 "Icon": "photo.png",
-                "Source": "PlaceWhereTheFileCameFrom",
+                "Source": "https://ubuntu.com/",
                 "HasStreamURL": false,
                 "StreamURL": "NeverUseMe"
             }
