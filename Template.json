@@ -1,0 +1,16 @@
+[
+    {
+        "Repo-Name": "DistroName",
+        "Movies": {
+            "DistroNameAndVersion": {
+                "Name": "DistroNameAndVersion",
+                ".Torrent": "DownloadISO",
+                "MagnetUrl": "OfficalWebsite",
+                "Icon": "photo.png",
+                "Source": "PlaceWhereTheFileCameFrom",
+                "HasStreamURL": false,
+                "StreamURL": "NeverUseMe"
+            }
+        }
+    }
+]
